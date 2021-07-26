@@ -107,11 +107,11 @@ mod tests {
         assert_eq!(username, "alex");
     }
 
-//    #[test]
-//    fn read_username_should_fail() {
-//        let username = read_username_from_file("non-existing.txt");
-//        assert_eq!(username.is_err(), true);
-//    }
+    #[test]
+    fn read_username_should_fail() {
+        let username = read_username_from_file("non-existing.txt");
+        assert_eq!(username.is_err(), true);
+    }
 
 
     #[test]
@@ -120,9 +120,9 @@ mod tests {
         assert_eq!(username, "alex");
     }
 
-//    #[test]
-//    fn read_username2_should_fail() {
-//        let username = read_username_from_file2("non-existing.txt");
-//        assert_eq!(username.is_err(), true);
-//    }
+    #[test]
+    fn read_username2_should_fail() {
+        let username = read_username_from_file2("non-existing.txt");
+        assert_eq!(username.is_err(), true);
+    }
 }
